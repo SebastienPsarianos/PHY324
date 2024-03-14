@@ -1,0 +1,79 @@
+\begin{thebibliography}{}
+
+\bibitem [\protect \citeauthoryear {%
+Brown%
+, Christian%
+\BCBL {}\ \BBA {} Hanson%
+}{%
+Brown%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2009}}%
+}]{%
+tracker}
+\APACinsertmetastar {%
+tracker}%
+\begin{APACrefauthors}%
+Brown, D.%
+, Christian, W.%
+\BCBL {}\ \BBA {} Hanson, R\BPBI M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2009}{}{}.
+\newblock
+\APACrefbtitle {Tracker Video Analysis and Modeling Tool for Physics
+  Education.} {Tracker video analysis and modeling tool for physics education.}
+\newblock
+\begin{APACrefURL} \url{https://physlets.org/tracker/} \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Harrison%
+}{%
+Harrison%
+}{%
+{\protect \APACyear {2023}}%
+}]{%
+harrison_2023}
+\APACinsertmetastar {%
+harrison_2023}%
+\begin{APACrefauthors}%
+Harrison, D\BPBI M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2023}{Apr}{}.
+\newblock
+\APACrefbtitle {Physics Undergraduate Practicals.} {Physics undergraduate
+  practicals.}
+\newblock
+\begin{APACrefURL}
+  \url{https://practicals.physics.utoronto.ca/practicals/document/118/}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Morin%
+}{%
+Morin%
+}{%
+{\protect \APACyear {2007}}%
+}]{%
+morin_2007}
+\APACinsertmetastar {%
+morin_2007}%
+\begin{APACrefauthors}%
+Morin, D\BPBI J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2007}.
+\newblock
+\APACrefbtitle {Introduction to classical mechanics : with problems and
+  solutions} {Introduction to classical mechanics : with problems and
+  solutions}.
+\newblock
+\APACaddressPublisher{Cambridge}{Cambridge University Press}.
+\PrintBackRefs{\CurrentBib}
+
+\end{thebibliography}

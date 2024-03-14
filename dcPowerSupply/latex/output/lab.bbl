@@ -1,0 +1,62 @@
+\begin{thebibliography}{}
+
+\bibitem [\protect \citeauthoryear {%
+C.Lee%
+}{%
+C.Lee%
+}{%
+{\protect \APACyear {2024}}%
+}]{%
+labManual}
+\APACinsertmetastar {%
+labManual}%
+\begin{APACrefauthors}%
+C.Lee.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2024}.
+\newblock
+\APACrefbtitle {DC Power Supply - PHY324 Lab Handout} {Dc power supply - phy324
+  lab handout}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Rashid%
+}{%
+Rashid%
+}{%
+{\protect \APACyear {2006}}%
+}]{%
+Rashid_2006}
+\APACinsertmetastar {%
+Rashid_2006}%
+\begin{APACrefauthors}%
+Rashid, M\BPBI H.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2006}.
+\newblock
+\APACrefbtitle {Power Electronics Handbook: Devices, Circuits and Applications}
+  {Power electronics handbook: Devices, circuits and applications}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+\APACcitebtitle {RMS}}{%
+\APACcitebtitle {RMS}}{%
+{\protect \APACyear {{\protect \bibnodate {}}}}%
+}]{%
+RMS}
+\APACinsertmetastar {%
+RMS}%
+\APACrefbtitle {RMS.} {Rms.}
+\newblock
+\APACrefYearMonthDay{{\protect \bibnodate {}}}{}{}.
+\newblock
+\begin{APACrefURL}
+  \url{https://rfmw.em.keysight.com/DigitalPhotonics/flexdca/UG/Content/Topics/Oscilloscope-Mode/Amplitude-Measurements/rms.htm}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\end{thebibliography}

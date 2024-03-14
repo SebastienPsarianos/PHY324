@@ -1,0 +1,48 @@
+\begin{thebibliography}{}
+
+\bibitem [\protect \citeauthoryear {%
+Batchelor%
+}{%
+Batchelor%
+}{%
+{\protect \APACyear {2002}}%
+}]{%
+batchelor_2002}
+\APACinsertmetastar {%
+batchelor_2002}%
+\begin{APACrefauthors}%
+Batchelor, G\BPBI K.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2002}.
+\newblock
+\APACrefbtitle {An introduction to fluid dynamics} {An introduction to fluid
+  dynamics}.
+\newblock
+\APACaddressPublisher{Cambridge, U.K. ; New York, Ny}{Cambridge University
+  Press}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+C.Lee%
+}{%
+C.Lee%
+}{%
+{\protect \APACyear {2024}}%
+}]{%
+labManual}
+\APACinsertmetastar {%
+labManual}%
+\begin{APACrefauthors}%
+C.Lee.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2024}.
+\newblock
+\APACrefbtitle {Motion in Fluids - PHY324 Lab Handout} {Motion in fluids -
+  phy324 lab handout}.
+\PrintBackRefs{\CurrentBib}
+
+\end{thebibliography}

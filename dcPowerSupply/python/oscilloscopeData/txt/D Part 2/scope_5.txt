@@ -1,0 +1,7 @@
+CH1: V_{1} - 56\unit{\ohm}
+MEASUREMENTS
+RMS - N cycles(1), Cur 776mV
+RMS - N Cycles AC(1), Cur 657.7mV
+RMS - N cycles(2), Cur No signal
+RMS - N Cycles AC(2), Cur No signal
+

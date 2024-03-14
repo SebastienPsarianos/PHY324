@@ -1,0 +1,8 @@
+CH1: V_{L} - 14.9\unit{V}
+CH2: V_{S} - 14.9\unit{V}
+MEASUREMENTS
+RMS - N cycles(2), Cur 15.3V
+RMS - N Cycles AC(2), Cur 1.0753V
+RMS - N Cycles AC(1), Cur 25.5mV
+RMS - N cycles(1), Cur 5.06V
+

@@ -1,0 +1,8 @@
+CH1: V_{L} - 560\unit{\ohm}
+CH2: V_{S} - 560\unit{\ohm}
+MEASUREMENTS
+RMS - N cycles(2), Cur 13.0V
+RMS - N Cycles AC(2), Cur 833.2mV
+RMS - N Cycles AC(1), Cur 28.1mV
+RMS - N cycles(1), Cur 5.09V
+

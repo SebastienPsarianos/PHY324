@@ -1,0 +1,8 @@
+CH1: V_{T} - 2.7\unit{k\ohm}
+CH2: V_{L} - 2.7\unit{k\ohm}
+MEASUREMENTS
+RMS - N cycles(2), Cur No edges
+RMS - N cycles(1), Cur 7.49V
+RMS - N Cycles AC(1), Cur 7.493V
+RMS - N Cycles AC(2), Cur No edges
+

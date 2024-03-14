@@ -1,0 +1,8 @@
+CH1: V_{T1}
+CH2: V_{L}
+MEASUREMENTS
+RMS - N cycles(2), Cur 6.51V
+RMS - N cycles(1), Cur 7.40V
+RMS - N Cycles AC(1), Cur 7.401V
+RMS - N Cycles AC(2), Cur 3.101V
+

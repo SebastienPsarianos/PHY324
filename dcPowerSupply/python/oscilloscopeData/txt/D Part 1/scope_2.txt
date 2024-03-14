@@ -1,0 +1,8 @@
+CH1: V_{T} - 56\unit{\ohm}
+CH2: V_{L} - 56\unit{\ohm}
+MEASUREMENTS
+RMS - N cycles(2), Cur 6.14V
+RMS - N cycles(1), Cur 7.00V
+RMS - N Cycles AC(1), Cur 6.989V
+RMS - N Cycles AC(2), Cur 1.3736V
+

@@ -1,0 +1,7 @@
+CH1: V_{T}
+MEASUREMENTS
+RMS - N cycles(2), Cur No signal
+RMS - N cycles(1), Cur 7.35V
+RMS - N Cycles AC(1), Cur 7.352V
+RMS - N Cycles AC(2), Cur No signal
+
