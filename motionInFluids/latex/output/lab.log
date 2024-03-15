@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.11.12)  15 MAR 2024 13:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.11.12)  15 MAR 2024 13:23
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -804,18 +804,18 @@ LaTeX Font Info:    Font shape `T1/XCharter-TLF/m/it' will be
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `lab.out' has not changed.
-(rerunfilecheck)             Checksum: 9EC3CAB4E738D4B42F5B85FFCE64047F;2161.
+(rerunfilecheck)             Checksum: 111D94086CB77C9DD89C72DF6DE0F6BA;2204.
  ) 
 Here is how much of TeX's memory you used:
  22324 strings out of 478268
  388679 string characters out of 5846346
- 841137 words of memory out of 5000000
+ 841145 words of memory out of 5000000
  40163 multiletter control sequences out of 15000+600000
  610172 words of font info for 151 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  86i,13n,93p,1465b,1393s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/xcharter/xch_rydp4l.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/xcharter/xch_ttjfqt.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/xcharter/XCharter-Bold.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/xcharter/XCharter-Italic.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/xcharter/XCharter-Roman.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/xcharter/XCharterMathMI.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/xcharter/XCharterMathRM.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sftt0800.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/newtx/txexs.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/newtx/txsys.pfb>
-Output written on output/lab.pdf (7 pages, 400877 bytes).
+Output written on output/lab.pdf (7 pages, 400851 bytes).
 PDF statistics:
  425 PDF objects out of 1000 (max. 8388607)
  218 compressed objects within 3 object streams

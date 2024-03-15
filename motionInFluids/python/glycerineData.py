@@ -40,7 +40,9 @@ for glycerineFileName in listdir(f"{glycerineDir}/txt"):
 
         #### Get position time tuples for the last 80% of measurements
         start, stop = round(len(sampleData) * 0.2), round(len(sampleData))
-        posnTimes = parsePositionVTime(sampleData[start:stop])
+        posnTimes = parsePositionVTime(sampleData)
+        frameLength = posnTimes[1][1] - posnTimes[0][1]
+        posnTimes = posnTimes[start:stop]
 
         velocities = np.array([])
         times = np.array([])
@@ -49,8 +51,14 @@ for glycerineFileName in listdir(f"{glycerineDir}/txt"):
             x0, t0 = posnTimes[i]
             x1, t1 = posnTimes[i + 1]
 
-            velocity, time = calculateVelocity(x1, t1, x0, t0)
-            uncertainty = velUncertainty(x1, t1, x0, t0, measuredSize, velocity)
+            velocity, time = calculateVelocity(*posnTimes[i+1], *posnTimes[i])
+            uncertainty = velUncertainty(*posnTimes[i+1],
+                                         *posnTimes[i],
+                                         measuredSize,
+                                         velocity,
+                                         frameLength)
+
+            print(uncertainty)
 
             velocities = np.append(velocities, velocity)
             times = np.append(times, time)
@@ -74,7 +82,8 @@ for glycerineFileName in listdir(f"{glycerineDir}/txt"):
                                   velUncertainty(*posnTimes[-1],
                                                  *posnTimes[0],
                                                  measuredSize,
-                                                 secantVelocity))
+                                                 secantVelocity,
+                                                 frameLength))
         # Put in the measured size values
         measuredSizeG = np.append(measuredSizeG,
                                    measuredSize)
@@ -84,7 +93,7 @@ for glycerineFileName in listdir(f"{glycerineDir}/txt"):
 #### Gerine Fitting #####
 ############################
 xValuesG = np.linspace(min(measuredSizeG), max(measuredSizeG), 200)
-terminalFitG, _ = curve_fit(squaredFit, measuredSizeG, terminalVG)
-secantFitG, _ = curve_fit(squaredFit, measuredSizeG, secantVG)
+terminalFitG, pcov = curve_fit(squaredFit, measuredSizeG, terminalVG)
 
+secantFitG, _ = curve_fit(squaredFit, measuredSizeG, secantVG)
 

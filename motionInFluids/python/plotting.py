@@ -5,9 +5,9 @@ from waterData import *
 from glycerineData import *
 
 plt.errorbar(measuredSizeG,
-             secantVG,
+             terminalVG,
              xerr=0.01,
-             yerr=secantVG_Unc,
+             yerr=terminalVG_Unc,
              linestyle='None',
              marker = 'o',
              c='k',

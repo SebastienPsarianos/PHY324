@@ -41,9 +41,11 @@ for waterFileName in listdir(f"{waterDir}/txt"):
         #### Grab measured size
         measuredSize = measuredSizes[f"{sizeCategory}-{trialNumber}"]
 
-        #### Parse the positions and times for the last 80% of the measurements
         start, stop = round(len(sampleData) * 0.2), round(len(sampleData))
-        posnTimes = parsePositionVTime(sampleData[start:stop])
+        posnTimes = parsePositionVTime(sampleData)
+        frameLength = posnTimes[1][1] - posnTimes[0][1]
+        posnTimes = posnTimes[start:stop]
+
 
         #### Remove 0 position points
         posnTimes = [(position, time) for position, time in posnTimes if position != 0 ]
@@ -56,7 +58,7 @@ for waterFileName in listdir(f"{waterDir}/txt"):
             x1, t1 = posnTimes[i+1]
 
             velocity, time = calculateVelocity(x1, t1, x0, t0)
-            uncertainty = velUncertainty(x1, t1, x0, t0, measuredSize, velocity)
+            uncertainty = velUncertainty(x1, t1, x0, t0, measuredSize, velocity, frameLength)
 
             velocities = np.append(velocities, velocity)
             times = np.append(times, time)
@@ -83,7 +85,11 @@ for waterFileName in listdir(f"{waterDir}/txt"):
         terminalVW_Unc = np.append(terminalVW_Unc, uncertainties[terminalVIndex])
 
         secantVW = np.append(secantVW, secantVelocity)
-        secantVW_Unc = np.append(secantVW_Unc, velUncertainty(posnTimes[-1][0],posnTimes[-1][1],posnTimes[0][0],posnTimes[0][1], measuredSize, secantVelocity))
+        secantVW_Unc = np.append(secantVW_Unc, velUncertainty(*posnTimes[-1],
+                                                              *posnTimes[0],
+                                                              measuredSize,
+                                                              secantVelocity,
+                                                              frameLength))
 
         measuredSizeW = np.append(measuredSizeW, measuredSize)
         waterVelocityPlots.append((velocities, times, f"{sizeCategory}-{trialNumber}"))

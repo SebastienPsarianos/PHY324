@@ -36,15 +36,19 @@ def calculateVelocity(x1, t1, x0, t0):
 ###########################
 #### Error Propagation ####
 ###########################
-def velUncertainty(v1,t1,v0,t0, size, velocity):
+def velUncertainty(v1,t1,v0,t0, size, velocity, frameLength):
     tUncertainty = sumErrorProp(t1-t0  / 2 , t1-t0  / 2)
     xUncertainty = sumErrorProp(size/2, size/2)
-    return divErrorProp(v1-v0, xUncertainty, t1-t0, tUncertainty, velocity)
+    print(v1-v0, xUncertainty, t1-t0, frameLength, velocity)
+    print(divErrorProp(v1-v0, xUncertainty, t1-t0, frameLength, velocity))
+    print("\n\n")
+
+    return divErrorProp(v1-v0, xUncertainty, t1-t0, frameLength, velocity)
 
 def divErrorProp(v1, e1, v2, e2, val):
     if v1 ==0 or v2 ==0:
         return 0
-    return np.sqrt((e1/v1)**2 + (e2/v2)**2)
+    return val * np.sqrt((e1/v1)**2 + (e2/v2)**2)
 
 def sumErrorProp( e1, e2):
     return np.sqrt(e1**2 + e2**2)
