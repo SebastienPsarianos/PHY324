@@ -62,7 +62,7 @@ def divErrorProp(v1, e1, v2, e2, val):
         return 0
     return np.sqrt((e1/v1)**2 + (e2/v2)**2)
 
-def sumErrorProp( e1, e2):
+def sumErrorProp(e1, e2):
     return np.sqrt(e1**2 + e2**2)
 
 

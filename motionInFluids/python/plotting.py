@@ -1,11 +1,13 @@
 import matplotlib.pyplot as plt
 
-from data import *
+from newUtils import redChiSquared
+from waterData import *
+from glycerineData import *
 
-plt.errorbar(glycSizeValues,
-             glycSecVel,
+plt.errorbar(measuredSizeG,
+             secantVG,
              xerr=0.01,
-             yerr=glycSecVelUnc,
+             yerr=secantVG_Unc,
              linestyle='None',
              marker = 'o',
              c='k',
@@ -14,7 +16,7 @@ plt.errorbar(glycSizeValues,
              label="Inferred terminal velocity"
             )
 
-plt.plot(glycFitXValues, squaredFit(glycFitXValues, *glycMaxFit), label="Theoretical model fit")
+plt.plot(xValuesG, squaredFit(xValuesG, *terminalFitG), label="Theoretical model fit")
 plt.legend()
 
 plt.xlabel("Sphere diameter (mm)")
@@ -23,10 +25,10 @@ plt.title("", wrap=True)
 plt.savefig(f"{directory}/output/glycMaxFit.pdf")
 plt.cla()
 
-plt.errorbar(glycSizeValues,
-             glycSecVel,
+plt.errorbar(measuredSizeG,
+             secantVG,
              xerr=0.01,
-             yerr=glycSecVelUnc,
+             yerr=secantVG_Unc,
              linestyle='None',
              marker = 'o',
              c='k',
@@ -35,7 +37,7 @@ plt.errorbar(glycSizeValues,
              label="Inferred terminal velocity"
             )
 
-plt.plot(glycFitXValues, squaredFit(glycFitXValues, *glycSecFit), label="Theoretical model fit")
+plt.plot(xValuesG, squaredFit(xValuesG, *secantFitG), label="Theoretical model fit")
 plt.legend()
 
 plt.xlabel("Sphere diameter (mm)")
@@ -43,16 +45,13 @@ plt.ylabel("Terminal Velocity (mm/s)")
 plt.savefig(f"{directory}/output/glycSecFit.pdf")
 plt.cla()
 
-
-
-
 ###############
 #### WATER ####
 ###############
-plt.errorbar(waterSizeValues,
-             waterMaxVel,
+plt.errorbar(measuredSizeW,
+             terminalVW,
              xerr=0.01,
-             yerr=waterMaxVelUnc,
+             yerr=terminalVW_Unc,
              linestyle='None',
              marker = 'o',
              c='k',
@@ -61,16 +60,16 @@ plt.errorbar(waterSizeValues,
              label="Inferred terminal velocity"
             )
 
-plt.plot(waterFitXValues, sqrtFit(waterFitXValues,*waterMaxFit), label="Theoretical model fit")
+plt.plot(xValuesW, sqrtFit(xValuesW, *terminalFitW), label="Theoretical model fit")
 plt.legend()
 plt.xlabel("Sphere diameter (mm)")
 plt.ylabel("Terminal Velocity (mm/s)")
 plt.savefig(f"{directory}/output/waterMaxGraph.pdf")
 plt.cla()
-plt.errorbar(waterSizeValues,
-             waterSecVel,
+plt.errorbar(measuredSizeW,
+             secantVW,
              xerr=0.01,
-             yerr=waterSecVelUnc,
+             yerr=secantVW_Unc,
              linestyle='None',
              marker = 'o',
              c='k',
@@ -79,7 +78,7 @@ plt.errorbar(waterSizeValues,
              label="Inferred terminal velocity"
             )
 
-plt.plot(waterFitXValues, sqrtFit(waterFitXValues, *waterSecFit), label="Theoretical model fit")
+plt.plot(xValuesW, sqrtFit(xValuesW, *secantFitW), label="Theoretical model fit")
 plt.legend()
 
 plt.xlabel("Sphere diameter (mm)")
