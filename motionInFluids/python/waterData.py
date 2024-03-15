@@ -2,7 +2,7 @@ from os import listdir
 from scipy.optimize import curve_fit
 import numpy as np
 
-from newUtils import *
+from utils import *
 
 #######################
 #### Set up Arrays ####
@@ -10,8 +10,8 @@ from newUtils import *
 terminalVW = np.array([])
 terminalVW_Unc = np.array([])
 
-secantVW = np.array([])
-secantVW_Unc = np.array([])
+# secantVW = np.array([])
+# secantVW_Unc = np.array([])
 
 waterVelocityPlots = []
 measuredSizeW = np.array([])
@@ -84,12 +84,12 @@ for waterFileName in listdir(f"{waterDir}/txt"):
         terminalVW = np.append(terminalVW, velocities[terminalVIndex])
         terminalVW_Unc = np.append(terminalVW_Unc, uncertainties[terminalVIndex])
 
-        secantVW = np.append(secantVW, secantVelocity)
-        secantVW_Unc = np.append(secantVW_Unc, velUncertainty(*posnTimes[-1],
-                                                              *posnTimes[0],
-                                                              measuredSize,
-                                                              secantVelocity,
-                                                              frameLength))
+        # secantVW = np.append(secantVW, secantVelocity)
+        # secantVW_Unc = np.append(secantVW_Unc, velUncertainty(*posnTimes[-1],
+        #                                                       *posnTimes[0],
+        #                                                       measuredSize,
+        #                                                       secantVelocity,
+        #                                                       frameLength))
 
         measuredSizeW = np.append(measuredSizeW, measuredSize)
         waterVelocityPlots.append((velocities, times, f"{sizeCategory}-{trialNumber}"))
@@ -99,5 +99,8 @@ for waterFileName in listdir(f"{waterDir}/txt"):
 #### Water Fitting #####
 ########################
 xValuesW = np.linspace(min(measuredSizeW), max(measuredSizeW), 200)
-terminalFitW, _ = curve_fit(sqrtFit, measuredSizeW, terminalVW)
-secantFitW, _ = curve_fit(sqrtFit, measuredSizeW, secantVW, (53))
+terminalFitW, pcov = curve_fit(sqrtFit, measuredSizeW, terminalVW)
+terminalFitW_Unc = np.sqrt(pcov[0][0])
+chi2W = redChiSquared(terminalVW, sqrtFit(measuredSizeW, *terminalFitW), terminalVW_Unc, len(terminalVW) - 1)
+
+# secantFitW, _ = curve_fit(sqrtFit, measuredSizeW, secantVW, (53))

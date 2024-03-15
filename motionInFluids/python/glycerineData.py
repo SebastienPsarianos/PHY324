@@ -2,15 +2,15 @@ from os import listdir
 from scipy.optimize import curve_fit
 import numpy as np
 
-from newUtils import *
+from utils import *
 
 #######################
 #### Set up Arrays ####
 #######################
 terminalVG = np.array([])
 terminalVG_Unc = np.array([])
-secantVG = np.array([])
-secantVG_Unc = np.array([])
+# secantVG = np.array([])
+# secantVG_Unc = np.array([])
 measuredSizeG = np.array([])
 
 #####################
@@ -42,30 +42,28 @@ for glycerineFileName in listdir(f"{glycerineDir}/txt"):
         start, stop = round(len(sampleData) * 0.2), round(len(sampleData))
         posnTimes = parsePositionVTime(sampleData)
         frameLength = posnTimes[1][1] - posnTimes[0][1]
+
         posnTimes = posnTimes[start:stop]
 
         velocities = np.array([])
         times = np.array([])
         uncertainties = np.array([])
-        for i in range(len(posnTimes) - 1):
+        for i in range(len(posnTimes) - 4):
             x0, t0 = posnTimes[i]
-            x1, t1 = posnTimes[i + 1]
+            x1, t1 = posnTimes[i + 4]
 
-            velocity, time = calculateVelocity(*posnTimes[i+1], *posnTimes[i])
-            uncertainty = velUncertainty(*posnTimes[i+1],
-                                         *posnTimes[i],
+            velocity, time = calculateVelocity(x1,t1,x0,t0)
+            uncertainty = velUncertainty(x1,t1,x0,t0,
                                          measuredSize,
                                          velocity,
                                          frameLength)
-
-            print(uncertainty)
 
             velocities = np.append(velocities, velocity)
             times = np.append(times, time)
             uncertainties = np.append(uncertainties, uncertainty)
 
         #### Secant velocity calculation
-        secantVelocity = (posnTimes[-1][0]-posnTimes[0][0])/(posnTimes[-1][1]-posnTimes[0][1])
+        # secantVelocity = (posnTimes[-1][0]-posnTimes[0][0])/(posnTimes[-1][1]-posnTimes[0][1])
         #### Calculate the maximum velocity
         terminalVelocityMax = max(range(len(velocities)), key=velocities.__getitem__)
 
@@ -77,23 +75,24 @@ for glycerineFileName in listdir(f"{glycerineDir}/txt"):
         terminalVG_Unc = np.append(terminalVG_Unc,
                                   uncertainties[terminalVelocityMax])
 
-        secantVG = np.append(secantVG, secantVelocity)
-        secantVG_Unc = np.append(secantVG_Unc,
-                                  velUncertainty(*posnTimes[-1],
-                                                 *posnTimes[0],
-                                                 measuredSize,
-                                                 secantVelocity,
-                                                 frameLength))
+        # secantVG = np.append(secantVG, secantVelocity)
+        # secantVG_Unc = np.append(secantVG_Unc,
+        #                           velUncertainty(*posnTimes[-1],
+        #                                          *posnTimes[0],
+        #                                          measuredSize,
+        #                                          secantVelocity,
+        #                                          frameLength))
         # Put in the measured size values
         measuredSizeG = np.append(measuredSizeG,
                                    measuredSize)
 
-
-############################
-#### Gerine Fitting #####
-############################
+##################
+#### Fitting #####
+##################
 xValuesG = np.linspace(min(measuredSizeG), max(measuredSizeG), 200)
 terminalFitG, pcov = curve_fit(squaredFit, measuredSizeG, terminalVG)
+terminalFitG_Unc = np.sqrt(pcov[0][0])
+chi2G = redChiSquared(terminalVG, sqrtFit(measuredSizeG, *terminalFitG), terminalVG_Unc, len(terminalVG) - 1)
 
-secantFitG, _ = curve_fit(squaredFit, measuredSizeG, secantVG)
 
+# secantFitG, _ = curve_fit(squaredFit, measuredSizeG, secantVG)
