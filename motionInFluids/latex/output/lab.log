@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.11.12)  15 MAR 2024 16:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.11.12)  15 MAR 2024 20:42
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -714,6 +714,10 @@ LaTeX Font Info:    Font shape `T1/XCharter-TLF/b/n' will be
 (Font)              scaled to size 9.60007pt on input line 23.
 LaTeX Font Info:    Font shape `T1/XCharter-TLF/b/n' will be
 (Font)              scaled to size 11.52008pt on input line 25.
+
+
+LaTeX Warning: Hyper reference `reynolds' on page 1 undefined on input line 26.
+
 LaTeX Font Info:    Font shape `OT1/XCharter-TLF/m/n' will be
 (Font)              scaled to size 9.60007pt on input line 27.
 LaTeX Font Info:    Font shape `OT1/XCharter-TLF/m/n' will be
@@ -725,100 +729,271 @@ LaTeX Font Info:    Font shape `T1/XCharter-TLF/m/n' will be
 LaTeX Font Info:    Font shape `T1/XCharter-TLF/m/n' will be
 (Font)              scaled to size 5.28003pt on input line 28.
 
-
 Package amsmath Warning: Foreign command \over;
 (amsmath)                \frac or \genfrac should be used instead
 (amsmath)                 on input line 35.
 
-<figures/apparatus.jpg, id=96, 1265.72874pt x 1003.75pt>
-File: figures/apparatus.jpg Graphic file (type jpg)
-<use figures/apparatus.jpg>
-Package pdftex.def Info: figures/apparatus.jpg  used on input line 51.
-(pdftex.def)             Requested size: 155.25517pt x 123.10977pt.
-LaTeX Font Info:    Font shape `T1/XCharter-TLF/m/n' will be
-(Font)              scaled to size 7.68005pt on input line 52.
-LaTeX Font Info:    Font shape `T1/XCharter-TLF/b/n' will be
-(Font)              scaled to size 7.68005pt on input line 52.
 [1
 
-{/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2 <./figures/apparatus.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 72--73
+{/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+LaTeX Font Info:    Font shape `T1/XCharter-TLF/m/n' will be
+(Font)              scaled to size 7.68005pt on input line 63.
+LaTeX Font Info:    Font shape `T1/XCharter-TLF/b/n' will be
+(Font)              scaled to size 7.68005pt on input line 63.
+<figures/apparatus.jpg, id=101, 1265.72874pt x 1003.75pt>
+File: figures/apparatus.jpg Graphic file (type jpg)
+<use figures/apparatus.jpg>
+Package pdftex.def Info: figures/apparatus.jpg  used on input line 74.
+(pdftex.def)             Requested size: 155.25517pt x 123.10977pt.
+ [2 <./figures/apparatus.jpg>]
+<../python/output/terminalPlotG.pdf, id=111, 462.52798pt x 346.89601pt>
+File: ../python/output/terminalPlotG.pdf Graphic file (type pdf)
+<use ../python/output/terminalPlotG.pdf>
+Package pdftex.def Info: ../python/output/terminalPlotG.pdf  used on input line 99.
+(pdftex.def)             Requested size: 243.96951pt x 182.98062pt.
 
+Overfull \hbox (22.18028pt too wide) in paragraph at lines 99--100
+ [][] 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 74--75
-
- []
-
-<../python/output/glycMaxFit.pdf, id=133, 462.52798pt x 346.89601pt>
-File: ../python/output/glycMaxFit.pdf Graphic file (type pdf)
-<use ../python/output/glycMaxFit.pdf>
-Package pdftex.def Info: ../python/output/glycMaxFit.pdf  used on input line 82.
-(pdftex.def)             Requested size: 179.64682pt x 134.73311pt.
-<../python/output/glycSecFit.pdf, id=136, 462.52798pt x 346.89601pt>
-File: ../python/output/glycSecFit.pdf Graphic file (type pdf)
-<use ../python/output/glycSecFit.pdf>
-Package pdftex.def Info: ../python/output/glycSecFit.pdf  used on input line 88.
-(pdftex.def)             Requested size: 179.64682pt x 134.73311pt.
-[3]
-<../python/output/waterMaxGraph.pdf, id=152, 462.52798pt x 346.89601pt>
-File: ../python/output/waterMaxGraph.pdf Graphic file (type pdf)
-<use ../python/output/waterMaxGraph.pdf>
-Package pdftex.def Info: ../python/output/waterMaxGraph.pdf  used on input line 96.
-(pdftex.def)             Requested size: 179.64682pt x 134.73311pt.
-<../python/output/waterSecGraph.pdf, id=155, 462.52798pt x 346.89601pt>
-File: ../python/output/waterSecGraph.pdf Graphic file (type pdf)
-<use ../python/output/waterSecGraph.pdf>
-Package pdftex.def Info: ../python/output/waterSecGraph.pdf  used on input line 102.
-(pdftex.def)             Requested size: 179.64682pt x 134.73311pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 106--107
-
- []
-
-[4 <../python/output/glycMaxFit.pdf> <../python/output/glycSecFit.pdf> <../python/output/waterMaxGraph.pdf> <../python/output/waterSecGraph.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 108--109
-
- []
-
-[5] (/usr/local/texlive/2022/texmf-dist/tex/latex/listings/lstlang1.sty
+(/usr/local/texlive/2022/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 188.
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 188.
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 105.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 
 LaTeX Font Warning: Font shape `T1/cmtt/b/n' undefined
-(Font)              using `T1/cmtt/m/n' instead on input line 188.
+(Font)              using `T1/cmtt/m/n' instead on input line 105.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on input line 106.
 
 LaTeX Font Info:    Font shape `T1/XCharter-TLF/m/n' will be
-(Font)              scaled to size 4.80003pt on input line 189.
-[6] (output/lab.bbl
+(Font)              scaled to size 4.80003pt on input line 106.
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on input line 106.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on input line 106.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on input line 106.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on input line 106.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on input line 106.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on input line 106.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on input line 106.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on input line 106.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on input line 106.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on input line 106.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on input line 107.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on input line 107.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on input line 107.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on input line 107.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on input line 107.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on input line 107.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on input line 107.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on input line 107.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on input line 107.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on input line 107.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on input line 107.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on input line 108.
+
+
+Underfull \hbox (badness 2707) in paragraph at lines 110--111
+[]\T1/XCharter-TLF/m/n/10 For the wa-ter data set, this was done us-ing
+ []
+
+
+Underfull \hbox (badness 2409) in paragraph at lines 110--111
+[][]\T1/XCharter-TLF/b/n/10 sqrt-Fit[][]\T1/XCharter-TLF/m/n/10 , a python im-ple-men-ta-tion of the high
+ []
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on input line 113.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on input line 113.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on input line 113.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on input line 113.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on input line 113.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on input line 113.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on input line 113.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on input line 113.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on input line 113.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on input line 113.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on input line 113.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on input line 113.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on input line 114.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on input line 114.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on input line 114.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on input line 114.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on input line 114.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on input line 114.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on input line 114.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on input line 114.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on input line 114.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on input line 114.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on input line 114.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on input line 114.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on input line 114.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on input line 114.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on input line 114.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on input line 114.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on input line 114.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on input line 114.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on input line 114.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on input line 114.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on input line 115.
+
+<../python/output/waterMaxGraph.pdf, id=123, 462.52798pt x 346.89601pt>
+File: ../python/output/waterMaxGraph.pdf Graphic file (type pdf)
+<use ../python/output/waterMaxGraph.pdf>
+Package pdftex.def Info: ../python/output/waterMaxGraph.pdf  used on input line 124.
+(pdftex.def)             Requested size: 243.96951pt x 182.98062pt.
+
+Overfull \hbox (22.18028pt too wide) in paragraph at lines 124--125
+ [][] 
+ []
+
+[3 <../python/output/terminalPlotG.pdf>] [4 <../python/output/waterMaxGraph.pdf>]
+<../python/output/terminalPlotGRes.pdf, id=298, 462.52798pt x 346.89601pt>
+File: ../python/output/terminalPlotGRes.pdf Graphic file (type pdf)
+<use ../python/output/terminalPlotGRes.pdf>
+Package pdftex.def Info: ../python/output/terminalPlotGRes.pdf  used on input line 162.
+(pdftex.def)             Requested size: 179.64682pt x 134.73311pt.
+<../python/output/terminalPlotWRes.pdf, id=301, 462.52798pt x 346.89601pt>
+File: ../python/output/terminalPlotWRes.pdf Graphic file (type pdf)
+<use ../python/output/terminalPlotWRes.pdf>
+Package pdftex.def Info: ../python/output/terminalPlotWRes.pdf  used on input line 169.
+(pdftex.def)             Requested size: 179.64682pt x 134.73311pt.
+ [5 <../python/output/terminalPlotGRes.pdf> <../python/output/terminalPlotWRes.pdf>] [6] (output/lab.bbl
 LaTeX Font Info:    Font shape `T1/XCharter-TLF/m/it' will be
 (Font)              scaled to size 9.60007pt on input line 21.
 ) [7] (output/lab.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
+
+LaTeX Warning: There were undefined references.
+
 Package rerunfilecheck Info: File `lab.out' has not changed.
-(rerunfilecheck)             Checksum: 111D94086CB77C9DD89C72DF6DE0F6BA;2204.
+(rerunfilecheck)             Checksum: 6E418F9B94843B200EB02130F0E66D8A;1751.
  ) 
 Here is how much of TeX's memory you used:
- 22324 strings out of 478268
- 388679 string characters out of 5846346
- 841150 words of memory out of 5000000
+ 22320 strings out of 478268
+ 388826 string characters out of 5846346
+ 846943 words of memory out of 5000000
  40163 multiletter control sequences out of 15000+600000
  610172 words of font info for 151 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 86i,13n,93p,1465b,1393s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/xcharter/xch_rydp4l.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/xcharter/xch_ttjfqt.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/xcharter/XCharter-Bold.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/xcharter/XCharter-Italic.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/xcharter/XCharter-Roman.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/xcharter/XCharterMathMI.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/xcharter/XCharterMathRM.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sftt0800.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/newtx/txexs.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/newtx/txsys.pfb>
-Output written on output/lab.pdf (7 pages, 401060 bytes).
+ 86i,13n,93p,1296b,1396s stack positions out of 10000i,1000n,20000p,200000b,200000s
+{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/xcharter/xch_rydp4l.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/xcharter/xch_ttjfqt.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/xcharter/XCharter-Bold.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/xcharter/XCharter-Italic.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/xcharter/XCharter-Roman.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/xcharter/XCharterMathMI.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/xcharter/XCharterMathRM.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sftt0800.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/newtx/txexs.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/newtx/txsys.pfb>
+Output written on output/lab.pdf (7 pages, 427749 bytes).
 PDF statistics:
- 426 PDF objects out of 1000 (max. 8388607)
- 218 compressed objects within 3 object streams
- 45 named destinations out of 1000 (max. 500000)
- 162 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 412 PDF objects out of 1000 (max. 8388607)
+ 221 compressed objects within 3 object streams
+ 41 named destinations out of 1000 (max. 500000)
+ 138 words of extra memory for PDF output out of 10000 (max. 10000000)
 

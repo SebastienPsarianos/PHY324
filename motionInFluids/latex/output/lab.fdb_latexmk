@@ -1,17 +1,17 @@
 # Fdb version 3
-["bibtex output/lab"] 1710523305 "output/lab.aux" "output/lab.bbl" "output/lab" 1710534879
+["bibtex output/lab"] 1710549711 "output/lab.aux" "output/lab.bbl" "output/lab" 1710549771
   "/usr/local/texlive/2022/texmf-dist/bibtex/bst/apacite/apacite.bst" 1374530685 141073 9d7b79dbf9d91133318126032cff8c27 ""
-  "output/lab.aux" 1710534878 7362 1c2b5269e9bc4ad3362cb56cc3db6b30 "pdflatex"
+  "output/lab.aux" 1710549770 6340 8dd7c03212b10390a9a07bf3aefc5890 "pdflatex"
   "references.bib" 1710439333 546 2e931a083cd6754e33e669742da0373a ""
   (generated)
   "output/lab.bbl"
   "output/lab.blg"
-["pdflatex"] 1710534876 "/Users/sebastienpsarianos/Desktop/Classes/Winter24/PHY324/motionInFluids/latex/lab.tex" "output/lab.pdf" "lab" 1710534879
-  "../python/output/glycMaxFit.pdf" 1710534061 16072 0224048f36ffdfaece4af0538ec612fa ""
-  "../python/output/glycSecFit.pdf" 1710534061 16322 134cd6c4cb187a0582bc6cc1e4a9bd4b ""
-  "../python/output/waterMaxGraph.pdf" 1710534061 16537 a10381365000e6dc9d73922428f3ded0 ""
-  "../python/output/waterSecGraph.pdf" 1710534061 16965 9013906b2260fba2f8b841b9ad554396 ""
-  "/Users/sebastienpsarianos/Desktop/Classes/Winter24/PHY324/motionInFluids/latex/lab.tex" 1710534876 16827 8138ced9a25ca2d48e361904c9db2afa ""
+["pdflatex"] 1710549769 "/Users/sebastienpsarianos/Desktop/Classes/Winter24/PHY324/motionInFluids/latex/lab.tex" "output/lab.pdf" "lab" 1710549771
+  "../python/output/terminalPlotG.pdf" 1710543646 25304 150bceaf8308db88659502104bce2961 ""
+  "../python/output/terminalPlotGRes.pdf" 1710543646 6834 72d4734f44ac1690e1e1de0278fa7ac1 ""
+  "../python/output/terminalPlotWRes.pdf" 1710543646 6871 3184e3606ae5afc1b257117bc8bf46bd ""
+  "../python/output/waterMaxGraph.pdf" 1710543646 27634 30173f979ca8d12ff68b3a2028770d66 ""
+  "/Users/sebastienpsarianos/Desktop/Classes/Winter24/PHY324/motionInFluids/latex/lab.tex" 1710549769 17179 562c0b7ad3918a03d59f46d9641d5cb7 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/xcharter/xch_rydp4l.enc" 1645915288 3163 21e525d33df21a14ca1957bee2a40288 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/xcharter/xch_ttjfqt.enc" 1645915288 3042 89ca0791973606a1e548c92a615cb3e0 ""
@@ -45,6 +45,7 @@
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/xcharter/zchmi.tfm" 1630614652 3256 de3add8a4865a8db30d819a24f6810dd ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/xcharter/zchmia.tfm" 1617383828 2492 615ae54cf421902490cb6b4b54447fa7 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sftt0800.pfb" 1215737283 175641 e30a691dc1402b08fd6535cf8a31e5b7 ""
+  "/usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb" 1215737283 169201 9ebf99020dde51a5086e186761a34e8f ""
   "/usr/local/texlive/2022/texmf-dist/fonts/type1/public/newtx/txexs.pfb" 1621283831 33424 f912ebe54685d0a65d3c046e3d517e38 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb" 1635022465 56686 b959be5e2e4a0232f5aa4c1c4be4574a ""
   "/usr/local/texlive/2022/texmf-dist/fonts/type1/public/newtx/txsys.pfb" 1569879884 40320 53cb337366eff502cad8f44871c88e39 ""
@@ -170,10 +171,10 @@
   "/usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1668274734 2826445 29451e748f605d7116a54a59e23e4902 ""
   "/usr/local/texlive/2022/texmf.cnf" 1647878952 577 209b46be99c9075fd74d4c0369380e8c ""
   "figures/apparatus.jpg" 1710444783 90798 5757beb63f924bf4bc00b11df52418a5 ""
-  "lab.tex" 1710534876 16827 8138ced9a25ca2d48e361904c9db2afa ""
-  "output/lab.aux" 1710534878 7362 1c2b5269e9bc4ad3362cb56cc3db6b30 "pdflatex"
-  "output/lab.bbl" 1710523305 908 a14096afd8457fc9add77cb2681c9bbe "bibtex output/lab"
-  "output/lab.out" 1710534878 2204 111d94086cb77c9dd89c72df6de0f6ba "pdflatex"
+  "lab.tex" 1710549769 17179 562c0b7ad3918a03d59f46d9641d5cb7 ""
+  "output/lab.aux" 1710549770 6340 8dd7c03212b10390a9a07bf3aefc5890 "pdflatex"
+  "output/lab.bbl" 1710549711 1431 88d231e0f161d65225b53b45e3caa22f "bibtex output/lab"
+  "output/lab.out" 1710549770 1751 6e418f9b94843b200eb02130f0e66d8a "pdflatex"
   "template.cls" 1709044031 2538 307b143334d4835cef5a0b3422357de3 ""
   (generated)
   "output/lab.aux"

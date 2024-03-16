@@ -9,8 +9,6 @@ from utils import *
 #######################
 terminalVG = np.array([])
 terminalVG_Unc = np.array([])
-# secantVG = np.array([])
-# secantVG_Unc = np.array([])
 measuredSizeG = np.array([])
 
 #####################
@@ -54,37 +52,25 @@ for glycerineFileName in listdir(f"{glycerineDir}/txt"):
 
             velocity, time = calculateVelocity(x1,t1,x0,t0)
             uncertainty = velUncertainty(x1,t1,x0,t0,
-                                         measuredSize,
                                          velocity,
-                                         frameLength)
+                                         frameLength,
+                                         velocity ==11.224999999999863)
 
             velocities = np.append(velocities, velocity)
             times = np.append(times, time)
             uncertainties = np.append(uncertainties, uncertainty)
 
-        #### Secant velocity calculation
-        # secantVelocity = (posnTimes[-1][0]-posnTimes[0][0])/(posnTimes[-1][1]-posnTimes[0][1])
+
         #### Calculate the maximum velocity
         terminalVelocityMax = max(range(len(velocities)), key=velocities.__getitem__)
 
         ###########################
         #### Shaping for plot #####
         ###########################
-        terminalVG = np.append(terminalVG,
-                               velocities[terminalVelocityMax])
-        terminalVG_Unc = np.append(terminalVG_Unc,
-                                  uncertainties[terminalVelocityMax])
+        terminalVG = np.append(terminalVG, velocities[terminalVelocityMax])
+        terminalVG_Unc = np.append(terminalVG_Unc, uncertainties[terminalVelocityMax])
 
-        # secantVG = np.append(secantVG, secantVelocity)
-        # secantVG_Unc = np.append(secantVG_Unc,
-        #                           velUncertainty(*posnTimes[-1],
-        #                                          *posnTimes[0],
-        #                                          measuredSize,
-        #                                          secantVelocity,
-        #                                          frameLength))
-        # Put in the measured size values
-        measuredSizeG = np.append(measuredSizeG,
-                                   measuredSize)
+        measuredSizeG = np.append(measuredSizeG, measuredSize)
 
 ##################
 #### Fitting #####
@@ -92,7 +78,4 @@ for glycerineFileName in listdir(f"{glycerineDir}/txt"):
 xValuesG = np.linspace(min(measuredSizeG), max(measuredSizeG), 200)
 terminalFitG, pcov = curve_fit(squaredFit, measuredSizeG, terminalVG)
 terminalFitG_Unc = np.sqrt(pcov[0][0])
-chi2G = redChiSquared(terminalVG, sqrtFit(measuredSizeG, *terminalFitG), terminalVG_Unc, len(terminalVG) - 1)
-
-
-# secantFitG, _ = curve_fit(squaredFit, measuredSizeG, secantVG)
+chi2G = redChiSquared(terminalVG, squaredFit(measuredSizeG, *terminalFitG), terminalVG_Unc, len(terminalVG) - 1)

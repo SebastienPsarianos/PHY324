@@ -10,9 +10,6 @@ from utils import *
 terminalVW = np.array([])
 terminalVW_Unc = np.array([])
 
-# secantVW = np.array([])
-# secantVW_Unc = np.array([])
-
 waterVelocityPlots = []
 measuredSizeW = np.array([])
 
@@ -47,22 +44,26 @@ for waterFileName in listdir(f"{waterDir}/txt"):
         posnTimes = posnTimes[start:stop]
 
 
-        #### Remove 0 position points
+        # #### Remove 0 position points
         posnTimes = [(position, time) for position, time in posnTimes if position != 0 ]
 
         velocities = np.array([])
         times = np.array([])
         uncertainties = np.array([])
-        for i in range(len(posnTimes) - 1):
+        for i in range(len(posnTimes) - 4):
             x0, t0 = posnTimes[i]
-            x1, t1 = posnTimes[i+1]
+            x1, t1 = posnTimes[i+4]
 
             velocity, time = calculateVelocity(x1, t1, x0, t0)
-            uncertainty = velUncertainty(x1, t1, x0, t0, measuredSize, velocity, frameLength)
+            uncertainty = velUncertainty(x1, t1, x0, t0,
+                                         velocity,
+                                         frameLength)
 
             velocities = np.append(velocities, velocity)
             times = np.append(times, time)
             uncertainties = np.append(uncertainties, uncertainty )
+
+
 
 
         #### Calculate overall velocity based on initial and final t, x
@@ -70,7 +71,7 @@ for waterFileName in listdir(f"{waterDir}/txt"):
 
 
         #### Filter out data points greater than 2.5 times the avg velocity
-        toKeep = np.abs(velocities) < 2.5 * secantVelocity
+        toKeep = np.abs(velocities) < 1.5 * secantVelocity
         velocities = velocities[toKeep]
         times = times[toKeep]
         uncertainties = uncertainties[toKeep]
@@ -84,13 +85,6 @@ for waterFileName in listdir(f"{waterDir}/txt"):
         terminalVW = np.append(terminalVW, velocities[terminalVIndex])
         terminalVW_Unc = np.append(terminalVW_Unc, uncertainties[terminalVIndex])
 
-        # secantVW = np.append(secantVW, secantVelocity)
-        # secantVW_Unc = np.append(secantVW_Unc, velUncertainty(*posnTimes[-1],
-        #                                                       *posnTimes[0],
-        #                                                       measuredSize,
-        #                                                       secantVelocity,
-        #                                                       frameLength))
-
         measuredSizeW = np.append(measuredSizeW, measuredSize)
         waterVelocityPlots.append((velocities, times, f"{sizeCategory}-{trialNumber}"))
 
@@ -102,5 +96,3 @@ xValuesW = np.linspace(min(measuredSizeW), max(measuredSizeW), 200)
 terminalFitW, pcov = curve_fit(sqrtFit, measuredSizeW, terminalVW)
 terminalFitW_Unc = np.sqrt(pcov[0][0])
 chi2W = redChiSquared(terminalVW, sqrtFit(measuredSizeW, *terminalFitW), terminalVW_Unc, len(terminalVW) - 1)
-
-# secantFitW, _ = curve_fit(sqrtFit, measuredSizeW, secantVW, (53))

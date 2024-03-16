@@ -45,4 +45,29 @@ C.Lee.%
   phy324 lab handout}.
 \PrintBackRefs{\CurrentBib}
 
+\bibitem [\protect \citeauthoryear {%
+Harrison%
+}{%
+Harrison%
+}{%
+{\protect \APACyear {2023}}%
+}]{%
+harrison_2023}
+\APACinsertmetastar {%
+harrison_2023}%
+\begin{APACrefauthors}%
+Harrison, D\BPBI M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2023}{Apr}{}.
+\newblock
+\APACrefbtitle {Physics Undergraduate Practicals.} {Physics undergraduate
+  practicals.}
+\newblock
+\begin{APACrefURL}
+  \url{https://practicals.physics.utoronto.ca/practicals/document/118/}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
 \end{thebibliography}
