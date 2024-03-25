@@ -10,6 +10,7 @@ from utils import *
 terminalVG = np.array([])
 terminalVG_Unc = np.array([])
 measuredSizeG = np.array([])
+reynoldsG = np.array([])
 
 #####################
 #### Parse Sizes ####
@@ -53,12 +54,13 @@ for glycerineFileName in listdir(f"{glycerineDir}/txt"):
             velocity, time = calculateVelocity(x1,t1,x0,t0)
             uncertainty = velUncertainty(x1,t1,x0,t0,
                                          velocity,
-                                         frameLength,
-                                         velocity ==11.224999999999863)
+                                         frameLength)
 
             velocities = np.append(velocities, velocity)
             times = np.append(times, time)
             uncertainties = np.append(uncertainties, uncertainty)
+
+
 
 
         #### Calculate the maximum velocity
@@ -69,7 +71,7 @@ for glycerineFileName in listdir(f"{glycerineDir}/txt"):
         ###########################
         terminalVG = np.append(terminalVG, velocities[terminalVelocityMax])
         terminalVG_Unc = np.append(terminalVG_Unc, uncertainties[terminalVelocityMax])
-
+        reynoldsG = np.append(reynoldsG, reynoldsNumber(measuredSize, velocity, 1.26/1000, 9.34 / 10))
         measuredSizeG = np.append(measuredSizeG, measuredSize)
 
 ##################

@@ -18,6 +18,9 @@ def squaredFit(x, A):
 def sqrtFit(x, A):
     return A * np.sqrt(np.abs(x))
 
+def reynoldsNumber(r, v, rho, eta):
+    return (r*v*rho)/eta
+
 ################################
 #### Posn / Vel Calculation ####
 ################################

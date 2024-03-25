@@ -7,20 +7,44 @@ from math import floor, log10
 ###################
 directory = path.dirname(path.abspath(__file__))
 
+
+# def sinFn(t, freq, psi):
+#     return np.sin(freq * t + psi)
+
+# def expDecay(t, A, tau):
+#     return A * np.exp(-t/tau)
+
+# def constant(x, A):
+#     return np.full(len(x), A)
+
+# def sqrt(x, a):
+#     return a * np.sqrt(x)
+###################
+#### Constants ####
+###################
+A = 13900
+B = 1.689
+R0 = 1.1
+a0 = 0.0045
+
 ###########################
 #### Fitting Functions ####
 ###########################
-def sinFn(t, freq, psi):
-    return np.sin(freq * t + psi)
+def calcRefractionIndex(theta: float):
+    return np.sqrt( ( (2/np.sqrt(3)) * np.sin(theta * np.pi /180) +(1/2))**2 +  3/4   )
 
-def expDecay(t, A, tau):
-    return A * np.exp(-t/tau)
+def calcWaveLength(n: float):
+    return np.sqrt(A/(n-B))
 
-def constant(x, A):
-    return np.full(len(x), A)
+def calcTemperature(roomTemp, voltage, current):
+    return roomTemp + (((voltage/current)/R0)-1)/a0
 
-def sqrt(x, a):
-    return a * np.sqrt(x)
+def invFit(x, A):
+    return A/x
+
+def fourthFit(x, A):
+    return A * x**4
+
 
 ###########################
 #### Error Propagation ####

@@ -1,0 +1,24 @@
+\begin{thebibliography}{}
+
+\bibitem [\protect \citeauthoryear {%
+Lee%
+}{%
+Lee%
+}{%
+{\protect \APACyear {2024}}%
+}]{%
+labManual}
+\APACinsertmetastar {%
+labManual}%
+\begin{APACrefauthors}%
+Lee, C.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2024}.
+\newblock
+\APACrefbtitle {PHY324 Blackbody Radiation Lab Manual} {Phy324 blackbody
+  radiation lab manual}.
+\PrintBackRefs{\CurrentBib}
+
+\end{thebibliography}

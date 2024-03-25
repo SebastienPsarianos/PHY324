@@ -19,11 +19,14 @@
 
 \date{\today}
 \maketitle
+\section{Abstract}
+In this experiment, we aimed to quantitatively examine the accuracy the terminal velocity predictions made by low and high Reynolds number approximations. This was done through the analysis of the terminal velocity of beads falling through a high Reynolds number environment (water) and a low Reynolds number environment (glycerine). Over the course of the analysis, fits of the data to the corresponding model in both experiments resulted in low $\chi_{red}^2$ values, suggesting that there was validity in the proportional predictions of the model. However, there were large inaccuracies in the proportionality constant in both situations. This was likely due to issues that were encountered within the experiment at high terminal velocities, due to the limitation of the video tracking apparatus that was used. To further verify the validity of this model, a more high quality video tracking apparatus should be employed.
+
 \section{Introduction}
 This study explores the field of fluid dynamics by investigating how differing inertial and viscous force ratios, quantified in this experiment by Reynolds Number (\bref{eqn::reynolds}{Equation 1}), affect the drag force experienced by a falling object. Through terminal velocity analysis of spheres with differing sizes falling through both a high and low Reynolds number regime, we hope to provide a quantitative analysis of the accuracy of high and low Reynolds number approximations for drag force (\bref{eqn::dragForce}{Equation 2}).
 
 \subsection{Background}
-Reynolds number (\bref{reynolds}{Equation 1}) is the measure used in this report to quantify whether a system's mechanics are dominated inertial or viscous forces. It is a dimensionless quantity that represents the ratio of inertial to viscous forces, defined as follows:
+Reynolds number (\bref{eqn::reynolds}{Equation 1}) is the measure used in this report to quantify whether a system's mechanics are dominated inertial or viscous forces. It is a dimensionless quantity that represents the ratio of inertial to viscous forces, defined as follows:
 \begin{equation}\label{eqn::reynolds}
 	R_e = \frac{\rho l v}{\eta}\ \ \text{\cite{batchelor_2002}}
 \end{equation}
@@ -43,7 +46,7 @@ Where $C_d$ is an empirically measured drag coefficient, $\rho$ is fluid density
 In this experiment we used glycerine to simulate a low Reynolds Number regime and water to simulate a high Reynolds Number regime. This choice was made due to water's low density $\eta_{w} \approx 1\times10^{-2}\unit{g\per {\cm\second}}$ in comparison to glycerine $\nu_g \approx 9.34\unit{g\per {\cm\second}}$ \cite{labManual}. Since \bref{eqn::reynolds}{Reynold's Number} is inversely related to fluid viscosity, water will have a comparatively larger Reynolds Number than  glycerine for a given velocity/size scale. By measuring terminal velocity of spheres of varying radii falling through both fluids, we aim to quantitatively examine the accuracy the terminal velocity predictions in \bref{eqn::terminalVelocity}{Equation 3}, derived from the drag force predictions in \bref{eqn::dragForce}{Equation 2}.
 
 
-\newpage\section{Methodology}
+\section{Methodology}
 \subsection{Apparatus}
 
 \begin{wraptable}{r}{0.5\textwidth}
@@ -97,7 +100,7 @@ The data that was given by the LabView applet contained position values correspo
 	\vspace{-30pt}
 	\centering
 	\includegraphics[width=0.55\textwidth]{../python/output/terminalPlotG.pdf}
-	\caption{Terminal velocity of a teflon bead falling through a glycerine tank (mm/s) vs bead radius (mm). Terminal velocity was measured by taking the average velocity over each time interval. These velocities were sorted, and the largest velocity was plotted for each sample. A fit is included of \bref{eqn::terminalVelocity}{Equation 3} (The low reynold number radius velocity relation approximation).}
+	\caption{Terminal velocity of a teflon bead falling through a glycerine tank (mm/s) vs bead radius (mm). Terminal velocity was measured by taking the average velocity over every four measurement intervals. These velocities were sorted, and the largest velocity was plotted for each sample. A fit is included of \bref{eqn::terminalVelocity}{Equation 3} (The low reynold number radius velocity relation approximation).}
 	\vspace{-50pt}
 \end{wrapfigure}
 After some filtering of the data set was done to compensate for tracking issues (detailed in \bref{sec::filtering}{Section 3.3}), this set of velocity measurements, the largest value was chosen to be the terminal velocity and plotted using matplotlib. Using curve\_fit from the scipy.optimize module a regression was performed on both sets of terminal velocities. For the glycerine data set, this was done using \bref{fnc::squaredFit}{squaredFit}, a python implementation of the low Reynolds Number terminal velocity approximation (\bref{eqn::terminalVelocity}{Equation 3}).
@@ -122,7 +125,7 @@ The resulting plots for the glycerine and water data sets are shown in \bref{fig
 	\vspace{-32pt}
 	\centering
 	\includegraphics[width=0.55\textwidth]{../python/output/waterMaxGraph.pdf}
-	\caption{Terminal velocity of a nylon bead falling through a water tank (mm/s) vs bead radius (mm). Terminal velocity was measured by taking the average velocity over each time interval. These velocities were sorted, and the largest velocity was plotted for each sample. A fit is included of \bref{eqn::terminalVelocity}{Equation 4} (The high reynold number radius velocity relation approximation).}
+	\caption{Terminal velocity of a nylon bead falling through a water tank (mm/s) vs bead radius (mm). Terminal velocity was measured by taking the average velocity over every four measurement intervals. These velocities were sorted, and the largest velocity was plotted for each sample. A fit is included of \bref{eqn::terminalVelocity}{Equation 3} (The high Reynolds number radius velocity relation approximation).}
 	\vspace{-20pt}
 \end{wrapfigure}
 
@@ -132,7 +135,7 @@ Considering all terminal velocity values were calculated using the expression $v
 \begin{equation}\label{eqn::sumUnc}
 	u(x+y) = \sqrt{[u(x)]^2 + [u(y)]^2}
 \end{equation}
-Applying this equation to the previously discussed values for
+Applying this equation to the previously calculated values for
 \begin{align*}
 	u(\Delta x) &= \sqrt{u(x_1)^2 + u(x_0)^2} = 0.07\\
 	u(\Delta t) &= \sqrt{u(t_1)^2 + u(t_0)^2} = {t_f/ \sqrt 8}
@@ -154,25 +157,65 @@ As the particle speed increased in the water trials, the software would occasion
 The first filtering method was to remove any position measurements with a position of $0$. All starting position values of the data sets were nonzero and $0$ was only measured when the tracker lost track of the bead and therefore there was no effect on physical data measurements. Since all position measurements were timestamped, removing measurements did not affect any velocity calculations other than making the time interval they were averaged over slightly larger.\vspace{\baselineskip}
 
 After plotting velocity vs time graphs for each sample, we noticed that every sample had a clear asymptotic trend to a terminal velocity. This was interrupted however by extremely large velocity values that were clearly due to tracking issues and not physical measurements. We decided to remove any velocity measurement with an absolute value greater than 2.5 times the mean velocity. This resulted in a clear asymptotic terminal velocity in all data sets. This filtering was only applied to the water data set as all large tracking issues occurred in these samples.
+\section{Discussion}
+\subsection{Glycerine Experiment}
+In \bref{fig::terminalPlotG}{Figure 2}, the model seems to fit the data quite well. This is confirmed with the value of $\chi_{red}^2=0.9952$. This suggests that the quadratic proportionality between radius and velocity suggested by \bref{eqn::terminalVelocity}{Equation 3} is a good approximation for this system.\vspace{\baselineskip}
 
+For the low Reynolds number approximation used in the glycerine experiment (\bref{fig::terminalPlotG}{Equation 3}), the coefficient that was fit for in the \bref{fnc::squaredFit}{squaredFit} function should be equal to $2\rho_s g \over 9\eta$. Plugging in known values for the variables, $\rho_s = 2.2\unit{g\per cm^3}$, $g = 9.8\unit{m\per s} $, $\eta = 9.34\unit{g \per{ cm \cdot s}}$ \cite{labManual}
+\begin{align*}
+	{2\rho_s g \over 9\eta} &= {2(2.2\unit{g \per cm^3})(9.8\unit{m\per s^2}) \over 9(9.34 \unit{g\cdot cm^{-1}\cdot  s^{-1} })} \approx 5.1\unit{mm^{-1}\cdot s^{-1}}
+\end{align*}
+
+\begin{wrapfigure}{r}{0.4\textwidth}\label{fig::terminalPlotGRes}
+	\vspace{-30pt}
+	\centering
+	\includegraphics[width=.4\textwidth]{../python/output/terminalPlotGRes.pdf}
+	\caption{Residual plot for \bref{fig::terminalPlotG}{Figure 2}}
+	\vspace{-20pt}
+\end{wrapfigure}
+
+The fit value that was measured of $0.502\pm0.008$ was off the model's predictions by an order of magnitude. It is possible that there is a factor that is affecting the results that is not accounted for in the model. It is also possible that this discrepancy occurred due to a calculation error. The calculated value is off by a factor of 10 almost exactly and an incorrect unit conversion somewhere in the process could likely be the cause of this. \vspace{\baselineskip}
+
+\bref{fig::terminalPlotGRes}{Figure 4} shows the residual plot for the experiment. From a visual inspection, there seems to be a slight bias above zero that is created by measurements of the largest bead size that are noticeably further from the fit than previous measurements. As previously discussed, occasionally loss of tracking was encountered, creating false position measurements and becoming more prevalent with higher velocities. These were minimal in the glycerine experiment but were noticed in the trials with the largest bead size. This is likely the cause for this divergence from the model in the last measurement. \vspace{\baselineskip}
+
+The $\chi_{red}^2$ value suggests that the velocities quadratic and square root dependence on radius is a good model, just with the wrong coefficient. Due to this, the calculations that provided the terminal velocity values in \bref{eqn::terminalVelocity}{Equation 3}, the calculations that provided the coefficient value of $5.1\unit{mm^{-1}\cdot s^{-1}}$ and the literature values should all be verified for correctness.
+
+\subsection{Water Experiment}
+Analysing \bref{fig::terminalPlotW}{Figure 3}, the fit visually seems to be relatively good, reflected by the $\chi_{red}^2$ value of $1.148$. This suggests that the proportional square root relation between velocity and radius is a good model for this experiment.\vspace{\baselineskip}
+
+For the high Reynolds Number approximation used in the water experiment (\bref{eqn::terminalVelocity}{Equation 3}), the coefficient $A$ from the \bref{fnc::sqrtFit}{sqrtFit} function should have a value of $\sqrt{8\rho_{\rm s} g/ 3\rho C_d  }$. Plugging in the literature values for these variables: $\rho_{\rm s} = 1.12\unit{g \cdot cm^{-3}}$, $\rho = 1\unit{g \cdot cm^{-3}}$, $C_d = 0.5$ \cite{labManual} gives $A\approx  140\unit{\sqrt{mm}\per s}$
+
+\begin{wrapfigure}{r}{0.4\textwidth}\label{fig::terminalPlotWRes}
+	\vspace{-10pt}
+	\centering
+	\includegraphics[width=.4\textwidth]{../python/output/terminalPlotWRes.pdf}
+	\caption{Residual plot for \bref{fig::terminalPlotW}{Figure 3}}
+	\vspace{-20pt}
+\end{wrapfigure}
+
+The computed value from the fit was $58.3\pm 0.9$. This is quite far off of the literature value of $140$. The tracking issues that were present in the experiment were very prevalent in the water data. It is possible that even after the filtering that was done on the data, this still had a large effect on the accuracy of the data. \vspace{\baselineskip}
+
+The residuals plot for the water experiment is displayed in \bref{fig::terminalPlotWRes}{Figure 5}. Although there seems to be a relatively even distribution of measurements above and below the zero value, after visually inspecting the graph it seems as if there is an increasing trend in the residuals. It is possible that a better fit could be achieved through a higher order term of a higher power such as a linear term in addition to the square root term.\vspace{\baselineskip}
+
+\subsection{Reynolds Number}
+By applying literature values for the fluid density, fluid viscosity and the measured length/velocity data, the following plots were made of the reynolds number in each trial.
 \begin{figure}[H]
-	\begin{minipage}[t]{0.45\textwidth}
-		\label{fig::terminalPlotGRes}
-		\centering
-		\includegraphics[width=.9\textwidth]{../python/output/terminalPlotGRes.pdf}
-		\caption{Residual plot for \bref{fig::terminalPlotG}{Figure 2}}
+	\begin{minipage}[t]{0.4\textwidth}
+		\includegraphics[width=\textwidth]{../python/output/reynoldsPlotG.pdf}
+		\caption{Plot of calculated reynolds numbers from \bref{eqn::reynolds}{Equation 1} for the glycerine data set}
 	\end{minipage}
 	\hfill
-	\begin{minipage}[t]{0.45\textwidth}
-		\label{fig::terminalPlotWRes}
-		\centering
-		\includegraphics[width=.9\textwidth]{../python/output/terminalPlotWRes.pdf}
-		\caption{Residual plot for \bref{fig::terminalPlotW}{Figure 3}}
-	\end{minipage}
+	\begin{minipage}[t]{0.4\textwidth}
+		\includegraphics[width=\textwidth]{../python/output/reynoldsPlotW.pdf}
+		\caption{Plot of calculated reynolds numbers from \bref{eqn::reynolds}{Equation 1} for the water data set}
+	\end{minipage}\vspace{\baselineskip}
+
+	This confirms that water is an appropriate high Reynolds number approximation and glycerine is an appropriate low Reynolds number approximation.
 \end{figure}
 
 \section{Conclusion}
-This thorough investigation delves into the dynamics of fluids by examining the equilibrium, between viscous forces as measured through the Reynolds number. By conducting experiments that compare how quickly beads descend in Reynolds number settings (like glycerine) versus high Reynolds number settings (such as water) the study presents an analysis of how dominant forces influence fluid behavior. Using beads of sizes crafted from Teflon and Nylon researchers carefully monitor their descent through fluids with high speed video tracking enabling measurements of terminal velocities. The results confirm models for both high Reynolds numbers highlighting the significant impact of bead size and fluid viscosity on terminal velocities. This research not expands our comprehension of dynamics by offering empirical evidence to reinforce theoretical forecasts but also introduces a rigorous approach for filtering data and managing errors to ensure result accuracy. By determining Reynolds numbers under conditions this study provides valuable insights, into the core principles governing fluid movement thereby pushing forward the field of fluid mechanics and its practical implications.
+Overall, the data seemed to reflect a clear quadratic dependence in the glycerine trials and a clear square root dependence in the water data with $\chi_red^2$ values of 0.9522 and 1.148 respectively. This suggests that the model is relatively accurate in terms of proportionality. However, to confirm the accuracy of the direct predictions of the model, further testing would be required to verify that the proportionality constant is correct. In a future experiment, steps should be taken to optimize the tracking capabilities of the software at higher speeds, such as using a higher frame rate as this was the main source of inaccuracy for the data tested. Additionally, applying a linear higher order term to the water data could possibly improve the quality of the fit as previously discussed.
+
 \newpage
 
 

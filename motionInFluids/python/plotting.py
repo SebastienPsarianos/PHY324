@@ -10,7 +10,7 @@ $2\\rho_s g /\\  9 \\eta={sigFig(terminalFitG[0],3)}\\pm {sigFig(terminalFitG_Un
 
 labelW = f"Best fit for Equation 3 (High $R_e$ approximation):\n\
 $\\chi_{{red}}^2={sigFig(chi2W,4)}$\n\
-$\sqrt{{8 \\rho_sg/3\\rho C_d }}={sigFig(terminalFitW[0],4)}\\pm {sigFig(terminalFitW_Unc,1)}$"
+$\sqrt{{8 \\rho_sg/3\\rho C_d }}={sigFig(terminalFitW[0],3)}\\pm {sigFig(terminalFitW_Unc,1)}$"
 
 
 plt.errorbar(measuredSizeG,
@@ -23,8 +23,7 @@ plt.errorbar(measuredSizeG,
              ecolor='r',
              capsize=3,
              label="Calculated terminal velocity",
-             markersize=3
-            )
+             markersize=3)
 
 plt.plot(xValuesG, squaredFit(xValuesG, *terminalFitG), label=labelG)
 plt.legend()
@@ -34,6 +33,7 @@ plt.ylabel("Terminal Velocity (mm/s)")
 plt.title("", wrap=True)
 plt.savefig(f"{directory}/output/terminalPlotG.pdf")
 plt.cla()
+
 
 plt.scatter(measuredSizeG, terminalVG - squaredFit(measuredSizeG, *terminalFitG), s=10, c="r")
 plt.axhline(y = 0, color = 'k', linestyle = 'dashed')
@@ -75,21 +75,36 @@ plt.xlabel("Terminal Velocity (mm/s)")
 plt.cla()
 
 
-for speeds, times, name in waterVelocityPlots:
-    plt.errorbar(times,
-             speeds,
-             xerr=0.01,
-            #  yerr=waterSecVelUnc,
-             linestyle='None',
-             marker = 'o',
-             c='k',
-             ecolor='r',
-             capsize=3,
-             label="Inferred terminal velocity"
-            )
+# for speeds, times, name in waterVelocityPlots:
+#     plt.errorbar(times,
+#              speeds,
+#              xerr=0.01,
+#             #  yerr=waterSecVelUnc,
+#              linestyle='None',
+#              marker = 'o',
+#              c='k',
+#              ecolor='r',
+#              capsize=3,
+#              label="Inferred terminal velocity"
+#             )
 
 
-    plt.xlabel("Time (s)")
-    plt.ylabel("Velocity (mm/s)")
-    plt.savefig(f"{directory}/output/test/{name}.pdf")
-    plt.cla()
+#     plt.xlabel("Time (s)")
+#     plt.ylabel("Velocity (mm/s)")
+#     plt.savefig(f"{directory}/output/test/{name}.pdf")
+#     plt.cla()
+
+plt.scatter(measuredSizeG, reynoldsG, s=10, c="r")
+plt.xlabel("Sphere diameter (mm)")
+plt.ylabel("Reynolds Number")
+plt.title("", wrap=True)
+plt.savefig(f"{directory}/output/reynoldsPlotG.pdf")
+plt.cla()
+
+
+plt.scatter(measuredSizeW, reynoldsW, s=10, c="r")
+plt.xlabel("Sphere diameter (mm)")
+plt.ylabel("Reynolds Number")
+plt.title("", wrap=True)
+plt.savefig(f"{directory}/output/reynoldsPlotW.pdf")
+plt.cla()

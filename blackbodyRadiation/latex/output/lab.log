@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.11.12)  17 MAR 2024 21:50
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.11.12)  24 MAR 2024 23:05
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/Users/sebastienpsarianos/Desktop/Classes/Winter24/PHY324/motionInFluids/latex/lab.tex
-(/Users/sebastienpsarianos/Desktop/Classes/Winter24/PHY324/motionInFluids/latex/lab.tex
+**/Users/sebastienpsarianos/Desktop/Classes/Winter24/PHY324/blackbodyRadiation/latex/lab.tex
+(/Users/sebastienpsarianos/Desktop/Classes/Winter24/PHY324/blackbodyRadiation/latex/lab.tex
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2022-02-24> (./template.cls (/usr/local/texlive/2022/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
@@ -518,9 +518,16 @@ Package xcolor Info: Model `Gray' substituted by `gray' on input line 1374.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1375.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/graphics/dvipsnam.def
 File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
-))) (/usr/local/texlive/2022/texmf-dist/tex/latex/apacite/apacite.sty
+))) (/usr/local/texlive/2022/texmf-dist/tex/latex/wrapfig/wrapfig.sty
+\wrapoverhang=\dimen184
+\WF@size=\dimen185
+\c@WF@wrappedlines=\count319
+\WF@box=\box67
+\WF@everypar=\toks35
+Package: wrapfig 2003/01/31  v 3.6
+) (/usr/local/texlive/2022/texmf-dist/tex/latex/apacite/apacite.sty
 Package: apacite 2013/07/21 v6.03 APA citation
-\c@BibCnt=\count319
+\c@BibCnt=\count320
 \bibleftmargin=\skip62
 \bibindent=\skip63
 \bibparsep=\skip64
@@ -531,22 +538,83 @@ Package: titling 2009/09/04 v2.1d maketitle typesetting
 \thanksmarkwidth=\skip67
 \thanksmargin=\skip68
 \droptitle=\skip69
-) (/usr/local/texlive/2022/texmf-dist/tex/latex/wrapfig/wrapfig.sty
-\wrapoverhang=\dimen184
-\WF@size=\dimen185
-\c@WF@wrappedlines=\count320
-\WF@box=\box67
-\WF@everypar=\toks35
-Package: wrapfig 2003/01/31  v 3.6
+) (/usr/local/texlive/2022/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2021/10/28 v1.9b multicolumn formatting (FMi)
+\c@tracingmulticols=\count321
+\mult@box=\box68
+\multicol@leftmargin=\dimen186
+\c@unbalance=\count322
+\c@collectmore=\count323
+\doublecol@number=\count324
+\multicoltolerance=\count325
+\multicolpretolerance=\count326
+\full@width=\dimen187
+\page@free=\dimen188
+\premulticols=\dimen189
+\postmulticols=\dimen190
+\multicolsep=\skip70
+\multicolbaselineskip=\skip71
+\partial@page=\box69
+\last@line=\box70
+\maxbalancingoverflow=\dimen191
+\mult@rightbox=\box71
+\mult@grightbox=\box72
+\mult@firstbox=\box73
+\mult@gfirstbox=\box74
+\@tempa=\box75
+\@tempa=\box76
+\@tempa=\box77
+\@tempa=\box78
+\@tempa=\box79
+\@tempa=\box80
+\@tempa=\box81
+\@tempa=\box82
+\@tempa=\box83
+\@tempa=\box84
+\@tempa=\box85
+\@tempa=\box86
+\@tempa=\box87
+\@tempa=\box88
+\@tempa=\box89
+\@tempa=\box90
+\@tempa=\box91
+\@tempa=\box92
+\@tempa=\box93
+\@tempa=\box94
+\@tempa=\box95
+\@tempa=\box96
+\@tempa=\box97
+\@tempa=\box98
+\@tempa=\box99
+\@tempa=\box100
+\@tempa=\box101
+\@tempa=\box102
+\@tempa=\box103
+\@tempa=\box104
+\@tempa=\box105
+\@tempa=\box106
+\@tempa=\box107
+\@tempa=\box108
+\@tempa=\box109
+\@tempa=\box110
+\c@minrows=\count327
+\c@columnbadness=\count328
+\c@finalcolumnbadness=\count329
+\last@try=\dimen192
+\multicolovershoot=\dimen193
+\multicolundershoot=\dimen194
+\mult@nat@firstbox=\box111
+\colbreak@box=\box112
+\mc@col@check@num=\count330
 )
-Package translations Info: No language package found. I am going to use `english' as default language. on input line 14.
-LaTeX Info: Redefining \oldstylenums on input line 14.
-LaTeX Font Info:    Trying to load font information for T1+XCharter-TLF on input line 14.
+Package translations Info: No language package found. I am going to use `english' as default language. on input line 26.
+LaTeX Info: Redefining \oldstylenums on input line 26.
+LaTeX Font Info:    Trying to load font information for T1+XCharter-TLF on input line 26.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/xcharter/T1XCharter-TLF.fd
 File: T1XCharter-TLF.fd 2017/06/25 (autoinst) Font definitions for T1/XCharter-TLF.
 )
 LaTeX Font Info:    Font shape `T1/XCharter-TLF/m/n' will be
-(Font)              scaled to size 9.60007pt on input line 14.
+(Font)              scaled to size 9.60007pt on input line 26.
 
 
 LaTeX Warning: Unused global option(s):
@@ -555,54 +623,54 @@ LaTeX Warning: Unused global option(s):
 (output/lab.aux)
 \openout1 = `lab.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/zchmi/m/it on input line 14.
-LaTeX Font Info:    Trying to load font information for OML+zchmi on input line 14.
+LaTeX Font Info:    Checking defaults for OML/zchmi/m/it on input line 26.
+LaTeX Font Info:    Trying to load font information for OML+zchmi on input line 26.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/xcharter/omlzchmi.fd
 File: omlzchmi.fd 2019/11/21 Fontinst v1.933 font definitions for OML/zchmi.
 )
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 14.
-LaTeX Font Info:    Trying to load font information for U+ntxexa on input line 14.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 26.
+LaTeX Font Info:    Trying to load font information for U+ntxexa on input line 26.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/newtx/untxexa.fd
 File: untxexa.fd 2012/04/16 Fontinst v1.933 font definitions for U/ntxexa.
 )
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 14.
-LaTeX Font Info:    Trying to load font information for LMS+ntxsy on input line 14.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 26.
+LaTeX Font Info:    Trying to load font information for LMS+ntxsy on input line 26.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/newtx/lmsntxsy.fd
 File: lmsntxsy.fd 2016/07/02 Fontinst v1.933 font definitions for LMS/ntxsy.
 )
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 14.
-LaTeX Font Info:    Trying to load font information for LMX+ntxexx on input line 14.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 26.
+LaTeX Font Info:    Trying to load font information for LMX+ntxexx on input line 26.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/newtx/lmxntxexx.fd
 File: lmxntxexx.fd 2016/07/03 Fontinst v1.933 font definitions for LMX/ntxexx.
 )
-LaTeX Font Info:    ... okay on input line 14.
-\c@lstlisting=\count321
+LaTeX Font Info:    ... okay on input line 26.
+\c@lstlisting=\count331
  (/usr/local/texlive/2022/texmf-dist/tex/latex/translations/translations-basic-dictionary-english.trsl
 File: translations-basic-dictionary-english.trsl (english translation file `translations-basic-dictionary')
 )
-Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 14.
+Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 26.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring ON on input line 14.
+Package hyperref Info: Link coloring ON on input line 26.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
  (/usr/local/texlive/2022/texmf-dist/tex/latex/refcount/refcount.sty
@@ -610,27 +678,27 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ) (/usr/local/texlive/2022/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count322
+\c@section@level=\count332
 )
-LaTeX Info: Redefining \ref on input line 14.
-LaTeX Info: Redefining \pageref on input line 14.
-LaTeX Info: Redefining \nameref on input line 14.
+LaTeX Info: Redefining \ref on input line 26.
+LaTeX Info: Redefining \pageref on input line 26.
+LaTeX Info: Redefining \nameref on input line 26.
  (output/lab.out) (output/lab.out)
 \@outlinefile=\write3
 \openout3 = `lab.out'.
 
  (/usr/local/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count323
-\scratchdimen=\dimen186
-\scratchbox=\box68
-\nofMPsegments=\count324
-\nofMParguments=\count325
+\scratchcounter=\count333
+\scratchdimen=\dimen195
+\scratchbox=\box113
+\nofMPsegments=\count334
+\nofMParguments=\count335
 \everyMPshowfont=\toks36
-\MPscratchCnt=\count326
-\MPscratchDim=\dimen187
-\MPnumerator=\count327
-\makeMPintoPDFobject=\count328
+\MPscratchCnt=\count336
+\MPscratchDim=\dimen196
+\MPnumerator=\count337
+\makeMPintoPDFobject=\count338
 \everyMPtoPDFconversion=\toks37
 ) (/usr/local/texlive/2022/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -672,88 +740,94 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\c@mv@tabular=\count329
-\c@mv@boldtabular=\count330
-\c@maskedRefs=\count331
+\c@mv@tabular=\count339
+\c@mv@boldtabular=\count340
+\c@maskedRefs=\count341
 (/usr/local/texlive/2022/texmf-dist/tex/latex/apacite/english.apc
 File: english.apc 2013/07/21 v6.03 apacite language file
 LaTeX Info: Redefining \BPBI on input line 129.
 LaTeX Info: Redefining \BHBI on input line 130.
 )
 LaTeX Font Info:    Font shape `T1/XCharter-TLF/m/n' will be
-(Font)              scaled to size 16.58891pt on input line 21.
+(Font)              scaled to size 16.58891pt on input line 27.
 LaTeX Font Info:    Font shape `T1/XCharter-TLF/m/n' will be
-(Font)              scaled to size 11.52008pt on input line 21.
-LaTeX Font Info:    Trying to load font information for OT1+XCharter-TLF on input line 21.
+(Font)              scaled to size 11.52008pt on input line 27.
+LaTeX Font Info:    Trying to load font information for OT1+XCharter-TLF on input line 27.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/xcharter/OT1XCharter-TLF.fd
 File: OT1XCharter-TLF.fd 2017/06/25 (autoinst) Font definitions for OT1/XCharter-TLF.
 )
 LaTeX Font Info:    Font shape `OT1/XCharter-TLF/m/n' will be
-(Font)              scaled to size 11.52008pt on input line 21.
+(Font)              scaled to size 11.52008pt on input line 27.
 LaTeX Font Info:    Font shape `OT1/XCharter-TLF/m/n' will be
-(Font)              scaled to size 8.44806pt on input line 21.
+(Font)              scaled to size 8.44806pt on input line 27.
 LaTeX Font Info:    Font shape `OT1/XCharter-TLF/m/n' will be
-(Font)              scaled to size 6.33604pt on input line 21.
-LaTeX Font Info:    Trying to load font information for U+ntxmia on input line 21.
+(Font)              scaled to size 6.33604pt on input line 27.
+LaTeX Font Info:    Trying to load font information for U+ntxmia on input line 27.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/newtx/untxmia.fd
 File: untxmia.fd 2018/04/14 Fontinst v1.933 font definitions for U/ntxmia.
 )
-LaTeX Font Info:    Trying to load font information for U+ntxsym on input line 21.
+LaTeX Font Info:    Trying to load font information for U+ntxsym on input line 27.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/newtx/untxsym.fd
 File: untxsym.fd 2015/03/20 Fontinst v1.933 font definitions for U/ntxsym.
 )
-LaTeX Font Info:    Trying to load font information for U+ntxsyc on input line 21.
+LaTeX Font Info:    Trying to load font information for U+ntxsyc on input line 27.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/newtx/untxsyc.fd
 File: untxsyc.fd 2012/04/12 Fontinst v1.933 font definitions for U/ntxsyc.
 )
 LaTeX Font Info:    Font shape `T1/XCharter-TLF/m/n' will be
-(Font)              scaled to size 13.82408pt on input line 22.
+(Font)              scaled to size 13.82408pt on input line 28.
 LaTeX Font Info:    Font shape `T1/XCharter-TLF/b/n' will be
-(Font)              scaled to size 13.82408pt on input line 22.
+(Font)              scaled to size 13.82408pt on input line 28.
 LaTeX Font Info:    Font shape `OT1/XCharter-TLF/m/n' will be
-(Font)              scaled to size 9.60007pt on input line 23.
+(Font)              scaled to size 9.60007pt on input line 29.
 LaTeX Font Info:    Font shape `OT1/XCharter-TLF/m/n' will be
-(Font)              scaled to size 7.00804pt on input line 23.
+(Font)              scaled to size 7.00804pt on input line 29.
 LaTeX Font Info:    Font shape `OT1/XCharter-TLF/m/n' will be
-(Font)              scaled to size 5.28003pt on input line 23.
+(Font)              scaled to size 5.28003pt on input line 29.
 LaTeX Font Info:    Font shape `T1/XCharter-TLF/b/n' will be
-(Font)              scaled to size 9.60007pt on input line 26.
-LaTeX Font Info:    Font shape `T1/XCharter-TLF/b/n' will be
-(Font)              scaled to size 11.52008pt on input line 28.
-LaTeX Font Info:    Font shape `T1/XCharter-TLF/m/n' will be
-(Font)              scaled to size 7.00804pt on input line 31.
-LaTeX Font Info:    Font shape `T1/XCharter-TLF/m/n' will be
-(Font)              scaled to size 5.28003pt on input line 31.
+(Font)              scaled to size 11.52008pt on input line 34.
 
 
 Package amsmath Warning: Foreign command \over;
 (amsmath)                \frac or \genfrac should be used instead
-(amsmath)                 on input line 38.
+(amsmath)                 on input line 37.
 
+<img/refract.png, id=68, 2514.39375pt x 1003.75pt>
+File: img/refract.png Graphic file (type png)
+<use img/refract.png>
+Package pdftex.def Info: img/refract.png  used on input line 51.
+(pdftex.def)             Requested size: 177.42868pt x 70.82104pt.
+LaTeX Font Info:    Font shape `T1/XCharter-TLF/m/n' will be
+(Font)              scaled to size 7.68005pt on input line 52.
+LaTeX Font Info:    Font shape `T1/XCharter-TLF/b/n' will be
+(Font)              scaled to size 7.68005pt on input line 52.
 [1
 
 {/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Font shape `T1/XCharter-TLF/m/n' will be
-(Font)              scaled to size 7.68005pt on input line 66.
 LaTeX Font Info:    Font shape `T1/XCharter-TLF/b/n' will be
-(Font)              scaled to size 7.68005pt on input line 66.
-<figures/apparatus.jpg, id=122, 1265.72874pt x 1003.75pt>
-File: figures/apparatus.jpg Graphic file (type jpg)
-<use figures/apparatus.jpg>
-Package pdftex.def Info: figures/apparatus.jpg  used on input line 77.
-(pdftex.def)             Requested size: 155.25517pt x 123.10977pt.
- [2 <./figures/apparatus.jpg>]
-<../python/output/terminalPlotG.pdf, id=132, 462.52798pt x 346.89601pt>
-File: ../python/output/terminalPlotG.pdf Graphic file (type pdf)
-<use ../python/output/terminalPlotG.pdf>
-Package pdftex.def Info: ../python/output/terminalPlotG.pdf  used on input line 102.
-(pdftex.def)             Requested size: 243.96951pt x 182.98062pt.
-
-Overfull \hbox (22.18028pt too wide) in paragraph at lines 102--103
- [][] 
- []
-
-(/usr/local/texlive/2022/texmf-dist/tex/latex/listings/lstlang1.sty
+(Font)              scaled to size 9.60007pt on input line 55.
+<img/apparatus.jpeg, id=98, 1498.59875pt x 1003.75pt>
+File: img/apparatus.jpeg Graphic file (type jpg)
+<use img/apparatus.jpeg>
+Package pdftex.def Info: img/apparatus.jpeg  used on input line 72.
+(pdftex.def)             Requested size: 177.42868pt x 118.83662pt.
+ [2 <./img/refract.png> <./img/apparatus.jpeg>]
+<../python/output/wein/peaks/26.pdf, id=122, 462.52798pt x 346.89601pt>
+File: ../python/output/wein/peaks/26.pdf Graphic file (type pdf)
+<use ../python/output/wein/peaks/26.pdf>
+Package pdftex.def Info: ../python/output/wein/peaks/26.pdf  used on input line 93.
+(pdftex.def)             Requested size: 133.07489pt x 99.80858pt.
+LaTeX Font Info:    Font shape `OT1/XCharter-TLF/m/n' will be
+(Font)              scaled to size 7.68005pt on input line 94.
+LaTeX Font Info:    Font shape `OT1/XCharter-TLF/m/n' will be
+(Font)              scaled to size 5.95203pt on input line 94.
+ [3 <../python/output/wein/peaks/26.pdf>]
+<../python/output/wein/lambdaVsTemps.pdf, id=144, 462.52798pt x 346.89601pt>
+File: ../python/output/wein/lambdaVsTemps.pdf Graphic file (type pdf)
+<use ../python/output/wein/lambdaVsTemps.pdf>
+Package pdftex.def Info: ../python/output/wein/lambdaVsTemps.pdf  used on input line 103.
+(pdftex.def)             Requested size: 177.42868pt x 133.07104pt.
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 108.
@@ -800,7 +874,7 @@ Package wrapfig Warning: wrapfigure used inside a conflicting environment on inp
 Package wrapfig Warning: wrapfigure used inside a conflicting environment on input line 109.
 
 
-Package wrapfig Warning: wrapfigure used inside a conflicting environment on input line 110.
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on input line 109.
 
 
 Package wrapfig Warning: wrapfigure used inside a conflicting environment on input line 110.
@@ -835,171 +909,50 @@ Package wrapfig Warning: wrapfigure used inside a conflicting environment on inp
 
 Package wrapfig Warning: wrapfigure used inside a conflicting environment on input line 111.
 
-
-Underfull \hbox (badness 2707) in paragraph at lines 113--114
-[]\T1/XCharter-TLF/m/n/10 For the wa-ter data set, this was done us-ing
- []
-
-
-Underfull \hbox (badness 2409) in paragraph at lines 113--114
-[][]\T1/XCharter-TLF/b/n/10 sqrt-Fit[][]\T1/XCharter-TLF/m/n/10 , a python im-ple-men-ta-tion of the high
- []
-
-
-Package wrapfig Warning: wrapfigure used inside a conflicting environment on input line 116.
-
-
-Package wrapfig Warning: wrapfigure used inside a conflicting environment on input line 116.
-
-
-Package wrapfig Warning: wrapfigure used inside a conflicting environment on input line 116.
-
-
-Package wrapfig Warning: wrapfigure used inside a conflicting environment on input line 116.
-
-
-Package wrapfig Warning: wrapfigure used inside a conflicting environment on input line 116.
-
-
-Package wrapfig Warning: wrapfigure used inside a conflicting environment on input line 116.
-
-
-Package wrapfig Warning: wrapfigure used inside a conflicting environment on input line 116.
-
-
-Package wrapfig Warning: wrapfigure used inside a conflicting environment on input line 116.
-
-
-Package wrapfig Warning: wrapfigure used inside a conflicting environment on input line 116.
-
-
-Package wrapfig Warning: wrapfigure used inside a conflicting environment on input line 116.
-
-
-Package wrapfig Warning: wrapfigure used inside a conflicting environment on input line 116.
-
-
-Package wrapfig Warning: wrapfigure used inside a conflicting environment on input line 116.
-
-[3 <../python/output/terminalPlotG.pdf>]
-
-Package wrapfig Warning: wrapfigure used inside a conflicting environment on input line 117.
-
-
-Package wrapfig Warning: wrapfigure used inside a conflicting environment on input line 117.
-
-
-Package wrapfig Warning: wrapfigure used inside a conflicting environment on input line 117.
-
-
-Package wrapfig Warning: wrapfigure used inside a conflicting environment on input line 117.
-
-
-Package wrapfig Warning: wrapfigure used inside a conflicting environment on input line 117.
-
-
-Package wrapfig Warning: wrapfigure used inside a conflicting environment on input line 117.
-
-
-Package wrapfig Warning: wrapfigure used inside a conflicting environment on input line 117.
-
-
-Package wrapfig Warning: wrapfigure used inside a conflicting environment on input line 117.
-
-
-Package wrapfig Warning: wrapfigure used inside a conflicting environment on input line 117.
-
-
-Package wrapfig Warning: wrapfigure used inside a conflicting environment on input line 117.
-
-
-Package wrapfig Warning: wrapfigure used inside a conflicting environment on input line 117.
-
-
-Package wrapfig Warning: wrapfigure used inside a conflicting environment on input line 117.
-
-
-Package wrapfig Warning: wrapfigure used inside a conflicting environment on input line 117.
-
-
-Package wrapfig Warning: wrapfigure used inside a conflicting environment on input line 117.
-
-
-Package wrapfig Warning: wrapfigure used inside a conflicting environment on input line 117.
-
-
-Package wrapfig Warning: wrapfigure used inside a conflicting environment on input line 117.
-
-
-Package wrapfig Warning: wrapfigure used inside a conflicting environment on input line 117.
-
-
-Package wrapfig Warning: wrapfigure used inside a conflicting environment on input line 117.
-
-
-Package wrapfig Warning: wrapfigure used inside a conflicting environment on input line 117.
-
-
-Package wrapfig Warning: wrapfigure used inside a conflicting environment on input line 117.
-
-
-Package wrapfig Warning: wrapfigure used inside a conflicting environment on input line 118.
-
-<../python/output/waterMaxGraph.pdf, id=225, 462.52798pt x 346.89601pt>
-File: ../python/output/waterMaxGraph.pdf Graphic file (type pdf)
-<use ../python/output/waterMaxGraph.pdf>
-Package pdftex.def Info: ../python/output/waterMaxGraph.pdf  used on input line 127.
-(pdftex.def)             Requested size: 243.96951pt x 182.98062pt.
-
-Overfull \hbox (22.18028pt too wide) in paragraph at lines 127--128
- [][] 
- []
-
-[4 <../python/output/waterMaxGraph.pdf>]
-<../python/output/terminalPlotGRes.pdf, id=326, 462.52798pt x 346.89601pt>
-File: ../python/output/terminalPlotGRes.pdf Graphic file (type pdf)
-<use ../python/output/terminalPlotGRes.pdf>
-Package pdftex.def Info: ../python/output/terminalPlotGRes.pdf  used on input line 172.
+<../python/output/wein/lambdaVsTempsResidual.pdf, id=152, 462.52798pt x 346.89601pt>
+File: ../python/output/wein/lambdaVsTempsResidual.pdf Graphic file (type pdf)
+<use ../python/output/wein/lambdaVsTempsResidual.pdf>
+Package pdftex.def Info: ../python/output/wein/lambdaVsTempsResidual.pdf  used on input line 118.
 (pdftex.def)             Requested size: 177.42868pt x 133.07104pt.
- [5]
-<../python/output/terminalPlotWRes.pdf, id=340, 462.52798pt x 346.89601pt>
-File: ../python/output/terminalPlotWRes.pdf Graphic file (type pdf)
-<use ../python/output/terminalPlotWRes.pdf>
-Package pdftex.def Info: ../python/output/terminalPlotWRes.pdf  used on input line 191.
+[4 <../python/output/wein/lambdaVsTemps.pdf> <../python/output/wein/lambdaVsTempsResidual.pdf>]
+<../python/output/stephanBoltzmann/peaks/5.pdf, id=270, 462.52798pt x 346.89601pt>
+File: ../python/output/stephanBoltzmann/peaks/5.pdf Graphic file (type pdf)
+<use ../python/output/stephanBoltzmann/peaks/5.pdf>
+Package pdftex.def Info: ../python/output/stephanBoltzmann/peaks/5.pdf  used on input line 128.
 (pdftex.def)             Requested size: 177.42868pt x 133.07104pt.
-<../python/output/reynoldsPlotG.pdf, id=344, 462.52798pt x 346.89601pt>
-File: ../python/output/reynoldsPlotG.pdf Graphic file (type pdf)
-<use ../python/output/reynoldsPlotG.pdf>
-Package pdftex.def Info: ../python/output/reynoldsPlotG.pdf  used on input line 204.
+<../python/output/stephanBoltzmann/intensityVsTemps.pdf, id=273, 462.52798pt x 346.89601pt>
+File: ../python/output/stephanBoltzmann/intensityVsTemps.pdf Graphic file (type pdf)
+<use ../python/output/stephanBoltzmann/intensityVsTemps.pdf>
+Package pdftex.def Info: ../python/output/stephanBoltzmann/intensityVsTemps.pdf  used on input line 137.
 (pdftex.def)             Requested size: 177.42868pt x 133.07104pt.
-<../python/output/reynoldsPlotW.pdf, id=347, 462.52798pt x 346.89601pt>
-File: ../python/output/reynoldsPlotW.pdf Graphic file (type pdf)
-<use ../python/output/reynoldsPlotW.pdf>
-Package pdftex.def Info: ../python/output/reynoldsPlotW.pdf  used on input line 209.
+<../python/output/stephanBoltzmann/intensityVsTempsRes.pdf, id=279, 462.52798pt x 346.89601pt>
+File: ../python/output/stephanBoltzmann/intensityVsTempsRes.pdf Graphic file (type pdf)
+<use ../python/output/stephanBoltzmann/intensityVsTempsRes.pdf>
+Package pdftex.def Info: ../python/output/stephanBoltzmann/intensityVsTempsRes.pdf  used on input line 149.
 (pdftex.def)             Requested size: 177.42868pt x 133.07104pt.
- [6 <../python/output/terminalPlotGRes.pdf> <../python/output/terminalPlotWRes.pdf>] [7 <../python/output/reynoldsPlotG.pdf> <../python/output/reynoldsPlotW.pdf>] (output/lab.bbl
+ (output/lab.bbl [5 <../python/output/stephanBoltzmann/peaks/5.pdf> <../python/output/stephanBoltzmann/intensityVsTemps.pdf> <../python/output/stephanBoltzmann/intensityVsTempsRes.pdf>]
 LaTeX Font Info:    Font shape `T1/XCharter-TLF/m/it' will be
 (Font)              scaled to size 9.60007pt on input line 21.
-) [8] (output/lab.aux)
+) [6] (output/lab.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `lab.out' has not changed.
-(rerunfilecheck)             Checksum: 20C5299E59CA5A7B6DEDD9DA8D532E2D;2367.
+(rerunfilecheck)             Checksum: 66E8DEB4D652CCBFE0BCA3EA0BD7F002;1831.
  ) 
 Here is how much of TeX's memory you used:
- 22348 strings out of 478268
- 389556 string characters out of 5846346
- 839789 words of memory out of 5000000
- 40179 multiletter control sequences out of 15000+600000
- 610971 words of font info for 153 fonts, out of 8000000 for 9000
+ 22446 strings out of 478268
+ 391550 string characters out of 5846346
+ 832386 words of memory out of 5000000
+ 40280 multiletter control sequences out of 15000+600000
+ 590727 words of font info for 135 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 86i,13n,93p,1038b,2441s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/xcharter/xch_rydp4l.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/xcharter/xch_ttjfqt.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/xcharter/XCharter-Bold.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/xcharter/XCharter-Italic.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/xcharter/XCharter-Roman.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/xcharter/XCharterMathMI.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/xcharter/XCharterMathRM.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sftt0800.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/newtx/txexs.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/newtx/txsys.pfb>
-Output written on output/lab.pdf (8 pages, 456795 bytes).
+ 86i,6n,93p,1134b,1398s stack positions out of 10000i,1000n,20000p,200000b,200000s
+{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/xcharter/xch_rydp4l.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/xcharter/xch_ttjfqt.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/xcharter/XCharter-Bold.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/xcharter/XCharter-Italic.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/xcharter/XCharter-Roman.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/xcharter/XCharterMathMI.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/xcharter/XCharterMathRM.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sftt0800.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/newtx/txexs.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/newtx/txsys.pfb>
+Output written on output/lab.pdf (6 pages, 679015 bytes).
 PDF statistics:
- 538 PDF objects out of 1000 (max. 8388607)
- 276 compressed objects within 3 object streams
- 49 named destinations out of 1000 (max. 500000)
- 188 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 473 PDF objects out of 1000 (max. 8388607)
+ 233 compressed objects within 3 object streams
+ 38 named destinations out of 1000 (max. 500000)
+ 153 words of extra memory for PDF output out of 10000 (max. 10000000)
 

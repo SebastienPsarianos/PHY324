@@ -9,6 +9,7 @@ from utils import *
 #######################
 terminalVW = np.array([])
 terminalVW_Unc = np.array([])
+reynoldsW = np.array([])
 
 waterVelocityPlots = []
 measuredSizeW = np.array([])
@@ -84,6 +85,7 @@ for waterFileName in listdir(f"{waterDir}/txt"):
         ###########################
         terminalVW = np.append(terminalVW, velocities[terminalVIndex])
         terminalVW_Unc = np.append(terminalVW_Unc, uncertainties[terminalVIndex])
+        reynoldsW = np.append(reynoldsW, reynoldsNumber(measuredSize, velocity, 1/1000, .01 / 10))
 
         measuredSizeW = np.append(measuredSizeW, measuredSize)
         waterVelocityPlots.append((velocities, times, f"{sizeCategory}-{trialNumber}"))
